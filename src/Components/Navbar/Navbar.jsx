@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
-import {Link} from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 
 export const NavbarComponent = () => {
@@ -16,8 +16,8 @@ export const NavbarComponent = () => {
             <p>SHOPPER</p>
         </div>
         <ul className='nav-menu'>
-          {/* <li onClick={()=>{setMenu("shop")}}> <Link to='/'>SHOP</Link>{menu==="shop"?<hr/>:<></>}</li> */}
-          <li onClick={()=>{setMenu("mens")}}> <Link to='/mens'>MEN</Link>  {menu==="mens"?<hr/>:<></>}</li>
+          <li onClick={()=>{setMenu("shop")}}> <Link to="../"> SHOP</Link>{menu==="shop"?<hr/>:<></>}</li>
+          <li onClick={()=>{setMenu("mens")}}> <a href="/mens">MEN</a>  {menu==="mens"?<hr/>:<></>}</li>
           <li onClick={()=>{setMenu("womens")}}> <a href="/womens">WOMEN</a>  {menu==="womens"?<hr/>:<></>}</li>
           <li onClick={()=>{setMenu("kids")}}>  <a href="/kids">KID</a> {menu==="kids"?<hr/>:<></>}</li>
         </ul>
