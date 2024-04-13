@@ -30,6 +30,7 @@ export const ShopCategory = (props) => {
           }
         })}
       </div>
+      <button className='shopcategory-loadmore'>Load More</button>
     </div>
   )
 }
